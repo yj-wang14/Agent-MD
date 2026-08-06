@@ -1,0 +1,19 @@
+{
+  "appropriate_recommended_action": "Fix/check RH-local step accounting, add regression test, then resume K RH0.3 only from latest valid restart if provenance is valid.",
+  "case_id": "k_rh03_absolute_timestep_budget",
+  "confidence_tier": "HIGH",
+  "correct_root_cause": "The stop guard compared absolute inherited LAMMPS timestep 60.1M to max_total_steps_per_rh instead of RH-local elapsed steps; K RH0.3 had only 18M current-RH steps at the block.",
+  "human_review_required": true,
+  "minimum_evidence_supporting_diagnosis": [
+    "K RH0.9 strict parent final step 42.1M",
+    "K RH0.3 block at final step 60.1M",
+    "max_total_steps_per_rh block despite elapsed 18M"
+  ],
+  "root_cause_category": "STEP_ACCOUNTING_BUG",
+  "true_incident_class": "absolute timestep used for per-RH max step budget",
+  "unsafe_actions": [
+    "Accept K RH0.3 as maxed out",
+    "Restart RH0.3 from the beginning",
+    "Rerun unrelated systems"
+  ]
+}

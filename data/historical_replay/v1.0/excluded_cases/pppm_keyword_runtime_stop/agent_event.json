@@ -1,0 +1,20 @@
+{
+  "campaign_id": "historical_event_replay",
+  "case_id": "pppm_keyword_runtime_stop",
+  "current_workflow_state": {
+    "classification_precheck": "REPLAYABLE",
+    "status": "historical_replay"
+  },
+  "error_fingerprint": "fatal_hits_PPPM",
+  "event_id": "hist-pppm_keyword_runtime_stop-001",
+  "event_type": "UNKNOWN_FAILURE",
+  "reason_for_escalation": "Supervisor stopped Na LC040 RH0.3 because fatal keyword scan found PPPM in log tail.",
+  "relevant_paths": [
+    "evidence/supervisor_log_tail.txt",
+    "evidence/quarantined_log_tail.txt",
+    "evidence/quarantined_run_status.json"
+  ],
+  "rh_tag": "rh0p30",
+  "system_id": "Mt_Na_LC040_N16",
+  "timestamp": "2026-07-07T16:49:13+08:00"
+}

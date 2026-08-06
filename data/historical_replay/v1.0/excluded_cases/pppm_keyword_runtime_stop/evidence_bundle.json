@@ -1,0 +1,26 @@
+{
+  "case_id": "pppm_keyword_runtime_stop",
+  "compact_summary": "Supervisor stopped Na LC040 RH0.3 because fatal keyword scan found PPPM in log tail.",
+  "files": [
+    {
+      "description": "Supervisor log around fatal keyword stop and later continuation context.",
+      "evidence_path": "evidence/supervisor_log_tail.txt",
+      "sha256": "8885a48dfbb434872e719dd919f6cbbdaadd3790bea6963f35cc555e4e1b56bd",
+      "source_path": "generated/downstream_rh03_rh01_production_supervisor.log"
+    },
+    {
+      "description": "Quarantined log from stopped branch.",
+      "evidence_path": "evidence/quarantined_log_tail.txt",
+      "sha256": "db440bd75501860667173127dbec9c612c0e2c2747c4b2c14bdf85fe99cde513",
+      "source_path": "examples/Mt_Na_LC040_N16/rh_0p30_from_strict_rh09/crash_recovery_20260701T2028_bad_pending_input/log.lammps"
+    },
+    {
+      "description": "Run status for quarantined event.",
+      "evidence_path": "evidence/quarantined_run_status.json",
+      "sha256": "73c528bcf5c64d8c91112bb43dd73ed3a72ade6eca9976267f02a4aafaeaec70",
+      "source_path": "examples/Mt_Na_LC040_N16/rh_0p30_from_strict_rh09/crash_recovery_20260701T2028_bad_pending_input/run_status.json"
+    }
+  ],
+  "instructions": "Use only this evidence. Hidden ground truth is not included.",
+  "title": "PPPM keyword fatal monitor stop"
+}

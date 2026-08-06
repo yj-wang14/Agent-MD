@@ -1,0 +1,20 @@
+{
+  "campaign_id": "historical_event_replay",
+  "case_id": "zero_gcmc_move_attempts",
+  "current_workflow_state": {
+    "classification_precheck": "REPLAYABLE",
+    "status": "historical_replay"
+  },
+  "error_fingerprint": "fix_gcmc_100_0_0",
+  "event_id": "hist-zero_gcmc_move_attempts-001",
+  "event_type": "NEEDS_REASONING",
+  "reason_for_escalation": "GCMC input and case config show exchange attempts are nonzero but translation and rotation attempts are zero.",
+  "relevant_paths": [
+    "evidence/case_gcmc_excerpt.yaml",
+    "evidence/lammps_input_gcmc_fix_excerpt.in",
+    "evidence/run_initial_diagnostics.json"
+  ],
+  "rh_tag": "rh0p90",
+  "system_id": "Mt_Na_LC050_N20",
+  "timestamp": "2026-07-07T16:49:13+08:00"
+}

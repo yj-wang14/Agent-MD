@@ -1,0 +1,132 @@
+case:
+  name: Mt_K_LC040_N16
+  description: Campaign-generated case for Mt_K_LC040_N16
+  temperature: 300.0
+claycode:
+  work_dir: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/claycode_inputs
+  input_yaml: Mt_K_LC040_N16.yaml
+  exp_csv: Mt_K_LC040_N16.csv
+  output_dir: Mt_K_LC040_N16
+  selected_prefix: Mt_K_LC040_N16_5_4
+  command:
+  - ClayCode
+  - builder
+  - -f
+  - Mt_K_LC040_N16.yaml
+paths:
+  example_dir: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16
+  template_dir: campaigns/montmorillonite_desorption/templates
+  script_dir: scripts
+  agent_dir: mtagent
+  raw_gro: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/raw/Mt_K_LC040_N16_5_4.gro
+  raw_top: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/raw/Mt_K_LC040_N16_5_4.top
+  raw_dir: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/raw
+  forcefield_file: campaigns/montmorillonite_desorption/templates/clayff-paper-2021
+  generated_dir: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/generated
+  prepared_dir: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/inputs
+structure:
+  claycode_model: Mt_K_LC040_N16
+  x_cells: 5
+  y_cells: 4
+  n_sheets: 2
+  layer_charge_per_uc: -0.4
+  cation: K
+  expected_ion_count: 16
+  planner_metadata: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/claycode_inputs/Mt_K_LC040_N16.metadata.json
+  target_ion_distribution:
+    bottom_external: 4
+    interlayer: 8
+    top_external: 4
+water:
+  model: SPCE
+  spce_source: campaigns/montmorillonite_desorption/templates/SPCEH2O.txt
+  molecule_template: campaigns/montmorillonite_desorption/templates/SPCEH2O_types_8_10.txt
+  oxygen_type: 8
+  hydrogen_type: 10
+  bond_type: 1
+  angle_type: 1
+gcmc:
+  rh_path:
+  - 0.9
+  - 0.7
+  - 0.5
+  - 0.3
+  - 0.2
+  - 0.1
+  - 0.05
+  - 0.02
+  psat_pa: 1011.71
+  patm_pa: 101325.0
+  interval: 1000
+  exchange_attempts: 100
+  translation_attempts: 0
+  rotation_attempts: 0
+  mu: -8.1
+  displacement: 0.5
+  tfac_insert: 1.6666666667
+  segment_steps: 1000000
+  restart_interval: 100000
+md:
+  timestep_fs: 1.0
+  pair_style: lj/cut/coul/long 12.0
+  kspace_style: pppm 1.0e-4
+  neighbor_skin: 2.0
+  neighbor_every: 2
+  neighbor_delay: 0
+  neighbor_check: true
+  reinitialize_velocity_on_restart: false
+  thermo_interval: 5000
+  monitor_interval: 1000
+  dump_interval: 50000
+equilibration:
+  run_dir: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/equilibration
+  soft_start_steps: 5000
+  nvt_steps: 100000
+  tdamp: 100.0
+  velocity_seed: 4928459
+  nve_limit: 0.05
+  hold_clay_z_during_soft_start: true
+  extra_bond_per_atom: 2
+  extra_angle_per_atom: 1
+  extra_special_per_atom: 2
+  output_data: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/inputs/Mt_K_LC040_N16_equilibrated.data
+  output_restart: campaigns/montmorillonite_desorption/work/Mt_K_LC040_N16/inputs/restart.pre_gcmc.final
+equilibrium:
+  window_steps: 500000
+  total_cv_max: 0.03
+  inter_cv_max: 0.05
+  ext_cv_max: 0.08
+  total_slope_frac: 0.01
+  inter_slope_frac: 0.02
+  ext_slope_frac: 0.02
+  min_water_slope_abs: 1.0
+  basal_slope_max_A_per_100k: 0.05
+  sum_tolerance: 0.5
+adaptive_extension:
+  small_drift_ratio: 1.5
+  moderate_drift_ratio: 3.0
+  small_extra_steps: 1000000
+  moderate_extra_steps: 1000000
+  large_extra_steps: 1000000
+  segment_size: 1000000
+  early_stop_allowed: true
+  max_total_steps_per_rh: 10000000
+local:
+  lammps_command: lmp
+  mpi_command: mpirun
+  default_np: 16
+  np_candidates:
+  - 4
+  - 8
+  - 12
+  - 16
+regions:
+  gcmc:
+    style: block
+    xlo: 0.1
+    xhi: 25.7
+    ylo: 0.1
+    yhi: 35.7
+    zlo: 20.0
+    zhi: 65.0
+    units: box

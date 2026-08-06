@@ -1,0 +1,4 @@
+system_id,cation,layer_charge,RH,final_step,total_water,interlayer_water,external_water,basal_proxy,ion_count,metadata_status,analysis_status,analysis_recommendation,fatal_errors,known_warnings,archived_restart
+Mt_Ca_LC040_N8,Ca,-0.4,0.9,4200000,473,280,193,19.5126,8,complete,equilibrated,archive,,kspace_neighbor_exclusion; net_charge; gcmc_full_energy,examples/Mt_Ca_LC040_N8/states/rh_0p90/restart.gcmc_rh0p90.4200000
+Mt_Na_LC050_N20,Na,-0.5,0.9,4100000,462,298,164,20.0522,20,complete,equilibrated,archive,,kspace_neighbor_exclusion; net_charge; gcmc_full_energy,examples/Mt_Na_LC050_N20/states/rh_0p90/restart.gcmc_rh0p90.4100000
+Mt_Na_LC050_N20,Na,-0.5,0.7,6100000,496,288,208,19.222,20,complete,equilibrated,archive,,kspace_neighbor_exclusion; net_charge; gcmc_full_energy,examples/Mt_Na_LC050_N20/states/rh_0p70/restart.gcmc_rh0p70.6100000

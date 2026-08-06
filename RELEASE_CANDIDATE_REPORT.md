@@ -1,0 +1,16 @@
+# Agent-MD v1.0-rc1 release-candidate report
+
+1. **Source baseline:** `${HISTORICAL_BASELINE_ROOT}`; baseline archive SHA-256 `34a7a46554d2d8e0d393603f6d52ca30653a6e275be24019e2c82f7a80c899a0`.
+2. **Release-candidate path:** `${RELEASE_ROOT}`.
+3. **Included content:** 261 files totaling 23400449 bytes; source-derived and release-authored files are mapped in `release_path_map.csv`.
+4. **Excluded classes:** restart files, full/raw trajectories, raw monitors superseded by derived CSVs, full runtime directories, smoke/failed/stale/deprecated/superseded outputs, K-LC0.5 and unrelated cases, caches/build products, draft figures, duplicate archives, and unresolved third-party preparation assets.
+5. **Transformed files:** 49 distinct release files recorded in `release_transformations.csv` before this report.
+6. **Privacy scan:** 0 prohibited-path/credential/private-key findings. Intended publication-email occurrences: 1; the corresponding-author address remains for human review.
+7. **Tests:** 207 passed, 1 skipped. The skipped test requires the ClayFF file intentionally omitted pending redistribution review. No LAMMPS or ClayCode simulation was run.
+8. **Table and figure reproduction:** Table results `[{"table": "table1_state_sampling.csv", "rows": 15, "values_match_baseline": true, "source_hash_matches_baseline": true}, {"table": "table2_operation_census.csv", "rows": 8, "values_match_baseline": true, "source_hash_matches_baseline": true}]`. Figure results `[{"figure": 3, "data_file": "fig3_water_evolution.csv", "rows": 15, "data_hash_matches_baseline": true, "rendered_pdf_created": true}, {"figure": 4, "data_file": "fig4_water_partition.csv", "rows": 15, "data_hash_matches_baseline": true, "rendered_pdf_created": true}, {"figure": 5, "data_file": "fig5_basal_spacing.csv", "rows": 15, "data_hash_matches_baseline": true, "rendered_pdf_created": true}, {"figure": 6, "data_file": "fig6_cation_sampling.csv", "rows": 9, "data_hash_matches_baseline": true, "rendered_pdf_created": true}, {"figure": 7, "data_file": "fig7_layer_charge_sampling.csv", "rows": 9, "data_hash_matches_baseline": true, "rendered_pdf_created": true}]`. Figures 3--7 rendered successfully into a temporary verification directory from staged data; data hashes matched the baseline. Generated verification artwork was removed and did not replace manuscript figures.
+9. **Manuscript:** compiled successfully to 24 pages with Figures 1--7 and Tables 1--3; 0 overfull boxes, 6 underfull-box warnings, unresolved references/citations = False. The temporary PDF/build directory was removed because inclusion of the manuscript PDF remains a blocker.
+10. **Checksums:** generated for every release file except the checksum manifest itself; verification passed = True.
+11. **Unresolved blockers:** 11 items listed in `RELEASE_BLOCKERS.md`, including licensing/redistribution, repository metadata, dependency policy, editable artwork, trajectory-data hosting, institutional information, and PDF inclusion.
+12. **Review suitability:** suitable for human release review, but not for publication until the listed blockers are resolved.
+
+Structural audit found 0 prohibited artifacts after verification cleanup. Exactly five manuscript case YAML files and all active Figure 1--7 assets are present. The immutable baseline and active production repository were not modified.

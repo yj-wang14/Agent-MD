@@ -1,0 +1,32 @@
+
+\section*{Code and Data Availability}
+
+The Agent-MD source code, campaign and case specifications, authoritative archive manifest, figure-source data, plotting scripts, event schemas, Codex CLI reasoning-agent metadata and the GPT-5.5 model identifier, and frozen replay artifacts will be released through a versioned repository at \url{GITHUB-URL}. The repository version corresponding to this manuscript will be preserved as a tagged release. The repository will distinguish rule-based campaign-agent execution records from optional reasoning-agent records and will document the Codex CLI reasoning-agent interface and GPT-5.5 model identifier used in this study. Large trajectory and restart files are not included, but the machine-readable records and source data required to reproduce the workflow logic, tables, and figures are provided.
+
+\appendix
+\section{Repository and Reproducibility Artifacts}
+\label{app:repo_artifacts}
+
+This appendix summarizes the principal classes of machine-readable artifacts used to define, execute, audit, and reproduce the Agent-MD campaign. Exact filenames, repository paths, and file-level checksums will be provided in the versioned public repository. The artifact classes below distinguish approved campaign definitions, persistent operational records, authoritative scientific results, review evidence, and reproducible reporting inputs. Persistent operational records document campaign progression but do not by themselves establish final-result authority; the accepted-state manifest and final quality-control records define the authoritative result package, exclude stale, smoke, failed, or superseded outputs, and provide the accepted states from which figure-source data are derived.
+
+\begin{table}[p]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.95}
+\caption{Principal reproducibility artifacts of the Agent-MD campaign.}
+\label{tab:repo_artifacts}
+\begin{tabular}{p{0.19\textwidth}p{0.39\textwidth}p{0.33\textwidth}}
+\toprule
+Artifact class & Main contents & Reproducibility role \\
+\midrule
+Campaign specification & System matrix, prescribed RH path, monitored observables, execution policies, acceptance policies, and state-transition rules. & Defines the researcher-approved campaign executed by the rule-based campaign agent. \\
+System definitions & Molecular composition, exchangeable cation identity and number, layer charge, model dimensions, preparation parameters, and simulation templates. & Defines the five montmorillonite systems and supports regeneration of their initial models and inputs. \\
+Persistent campaign records & Task dependencies, current system and state, action history, run status, restart lineage, continuation decisions, and archive history. & Reconstructs campaign progression and the actions selected during rule-based production. \\
+Authoritative result package & Accepted-state manifest, strict-pass status, selected restart lineage, convergence summaries, quality-control reports, and provenance validation. & Identifies the final accepted scientific states and distinguishes them from stale, failed, or superseded outputs. \\
+Review and replay records & Review events, evidence bundles, validated recommendations or human decisions, incident records, and frozen replay cases. & Supports audit and reproduction of event-triggered review and targeted recovery. \\
+Figure and table source data & Validated state summaries, accepted-state trajectories, processed tabular data, and plotting scripts. & Reproduces the reported tables and Figures~3--7 without requiring the full production trajectories or restart files. \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier

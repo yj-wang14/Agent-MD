@@ -1,0 +1,32 @@
+{
+  "case_id": "k_rh03_absolute_timestep_budget",
+  "compact_summary": "K RH0.3 was blocked at absolute step 60.1M even though its parent strict RH0.9 ended at 42.1M.",
+  "files": [
+    {
+      "description": "Supervisor log through K RH0.3 max_total_steps block.",
+      "evidence_path": "evidence/supervisor_k_block_tail.txt",
+      "sha256": "8885a48dfbb434872e719dd919f6cbbdaadd3790bea6963f35cc555e4e1b56bd",
+      "source_path": "generated/downstream_rh03_rh01_production_supervisor.log"
+    },
+    {
+      "description": "Status JSON containing K RH0.3 checks and strict RH0.9 source.",
+      "evidence_path": "evidence/production_status_k_excerpt.json",
+      "sha256": "9938214e487b7eb408e3247150e7034a186a850d25684760d5c2d5c26a99941a",
+      "source_path": "generated/downstream_rh03_rh01_production_status.json"
+    },
+    {
+      "description": "K strict RH0.9 parent final step.",
+      "evidence_path": "evidence/k_rh09_strict_summary.json",
+      "sha256": "976995bfbf1968c85a5c253aeaf8231f02ed8a465c2c18c836364657af47336e",
+      "source_path": "examples/Mt_K_LC040_N16/states/rh_0p90_strict_pass/summary.json"
+    },
+    {
+      "description": "Current manager/continuation decision around K RH0.3.",
+      "evidence_path": "evidence/k_rh03_manager_decision.json",
+      "sha256": "5a8d0e3bd31aa3f35bd6e87132ebf702719b64c1fae5f01aad3d06e9a1f53f9c",
+      "source_path": "examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09/manager_decision.strict_continue.json"
+    }
+  ],
+  "instructions": "Use only this evidence. Hidden ground truth is not included.",
+  "title": "K RH0.3 absolute timestep vs RH-local step budget"
+}

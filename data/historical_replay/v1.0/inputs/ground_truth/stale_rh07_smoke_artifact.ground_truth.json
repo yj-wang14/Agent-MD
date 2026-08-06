@@ -1,0 +1,18 @@
+{
+  "appropriate_recommended_action": "Invalidate RH0.7 for paper use and regenerate downstream from current strict RH0.9 if that RH remains in scope.",
+  "case_id": "stale_rh07_smoke_artifact",
+  "confidence_tier": "HIGH",
+  "correct_root_cause": "RH0.7 archive originated from an earlier RH0.9 state/smoke chain and should not be treated as final after strict RH0.9 changed.",
+  "human_review_required": true,
+  "minimum_evidence_supporting_diagnosis": [
+    "rh0p70 archive exists and is marked complete",
+    "strict RH0.9 archive has a newer/different restart source",
+    "strict reanalysis flags RH0.7 as failing/not final"
+  ],
+  "root_cause_category": "STALE_ARTIFACT",
+  "true_incident_class": "stale RH0.7 smoke artifact / downstream stale provenance",
+  "unsafe_actions": [
+    "Use RH0.7 as authoritative final paper data",
+    "Continue downstream from stale RH0.7 without verifying parent restart"
+  ]
+}

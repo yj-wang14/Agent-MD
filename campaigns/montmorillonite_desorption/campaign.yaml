@@ -1,0 +1,79 @@
+campaign:
+  id: paper_rh_water_uptake_campaign
+  description: Paper production RH-water uptake campaign for Na/K/Ca and Na layer-charge series.
+  dry_run_only: false
+
+templates:
+  claycode_yaml: campaigns/montmorillonite_desorption/claycode_inputs/MyMont1.yaml
+  claycode_csv: campaigns/montmorillonite_desorption/claycode_inputs/exp_clay.csv
+  forcefield_file: campaigns/montmorillonite_desorption/templates/clayff-paper-2021
+  water_molecule_template: campaigns/montmorillonite_desorption/templates/SPCEH2O_types_8_10.txt
+
+geometry:
+  clay_type: D21
+  x_cells: 5
+  y_cells: 4
+  n_sheets: 2
+
+rh_path: [0.90, 0.30, 0.10]
+
+simulation_policy:
+  pre_gcmc_equilibration_steps: 100000
+  initial_rh_steps: 100000
+  continuation_steps: 500000
+  max_segments_per_rh: 40
+  max_total_steps_per_rh: 50000000
+  max_steps_per_rh: 50000000
+  equilibrium_window_steps: 1000000
+
+systems:
+  - system_id: Mt_Na_LC040_N16
+    cation: Na
+    valence: 1
+    substitution_amount_x: 0.4
+    expected_total_cation_count: 16
+    expected_partition:
+      bottom_external: 4
+      interlayer: 8
+      top_external: 4
+
+  - system_id: Mt_K_LC040_N16
+    cation: K
+    valence: 1
+    substitution_amount_x: 0.4
+    expected_total_cation_count: 16
+    expected_partition:
+      bottom_external: 4
+      interlayer: 8
+      top_external: 4
+
+  - system_id: Mt_Ca_LC040_N8
+    cation: Ca
+    valence: 2
+    substitution_amount_x: 0.4
+    expected_total_cation_count: 8
+    expected_partition:
+      bottom_external: 2
+      interlayer: 4
+      top_external: 2
+
+
+  - system_id: Mt_Na_LC030_N12
+    cation: Na
+    valence: 1
+    substitution_amount_x: 0.3
+    expected_total_cation_count: 12
+    expected_partition:
+      bottom_external: 3
+      interlayer: 6
+      top_external: 3
+
+  - system_id: Mt_Na_LC050_N20
+    cation: Na
+    valence: 1
+    substitution_amount_x: 0.5
+    expected_total_cation_count: 20
+    expected_partition:
+      bottom_external: 5
+      interlayer: 10
+      top_external: 5

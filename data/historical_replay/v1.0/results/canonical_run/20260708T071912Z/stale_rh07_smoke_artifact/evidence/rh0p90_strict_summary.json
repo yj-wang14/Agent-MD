@@ -1,0 +1,16 @@
+{
+  "analysis_status": "strict_passed",
+  "archived_monitor": "examples/Mt_Na_LC050_N20/states/rh_0p90_strict_pass/monitor_gcmc_rh0p90.dat",
+  "archived_restart": "examples/Mt_Na_LC050_N20/states/rh_0p90_strict_pass/restart.gcmc_rh0p90.12100000",
+  "equilibrium_status": "strict_passed",
+  "final_basal_spacing": 19.3498,
+  "final_external_water": 253.0,
+  "final_interlayer_water": 288.0,
+  "final_step": 12100000,
+  "final_total_water": 541.0,
+  "refreshed_at": "2026-07-01T23:42:09+08:00",
+  "rh": 0.9,
+  "rh_tag": "rh0p90",
+  "source_summary_csv": "generated/rh09_final1m_continuation_summary.csv",
+  "system_id": "Mt_Na_LC050_N20"
+}

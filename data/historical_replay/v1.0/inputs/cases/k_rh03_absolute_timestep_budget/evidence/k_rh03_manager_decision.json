@@ -1,0 +1,6 @@
+{
+  "action": "continue_current_rh",
+  "generated_at": "2026-07-06T23:23:34+08:00",
+  "next_segment_steps": 2000000,
+  "reason": "Strict paper final-window criteria not yet satisfied."
+}

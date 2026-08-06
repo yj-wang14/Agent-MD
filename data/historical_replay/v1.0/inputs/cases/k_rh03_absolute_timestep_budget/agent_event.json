@@ -1,0 +1,21 @@
+{
+  "campaign_id": "historical_event_replay",
+  "case_id": "k_rh03_absolute_timestep_budget",
+  "current_workflow_state": {
+    "classification_precheck": "REPLAYABLE",
+    "status": "historical_replay"
+  },
+  "error_fingerprint": "blocked_at_60100000_parent_42100000",
+  "event_id": "hist-k_rh03_absolute_timestep_budget-001",
+  "event_type": "NEEDS_REASONING",
+  "reason_for_escalation": "K RH0.3 was blocked at absolute step 60.1M even though its parent strict RH0.9 ended at 42.1M.",
+  "relevant_paths": [
+    "evidence/supervisor_k_block_tail.txt",
+    "evidence/production_status_k_excerpt.json",
+    "evidence/k_rh09_strict_summary.json",
+    "evidence/k_rh03_manager_decision.json"
+  ],
+  "rh_tag": "rh0p30",
+  "system_id": "Mt_K_LC040_N16",
+  "timestamp": "2026-07-07T16:49:13+08:00"
+}

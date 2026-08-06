@@ -1,0 +1,151 @@
+{
+  "analysis_recommendation": "archive",
+  "analysis_status": "equilibrated",
+  "archive_dir": "examples/Mt_Na_LC050_N20/states/rh_0p70",
+  "archived_files": [
+    "examples/Mt_Na_LC050_N20/states/rh_0p70/restart.gcmc_rh0p70.6100000",
+    "examples/Mt_Na_LC050_N20/states/rh_0p70/monitor_gcmc_rh0p70.dat",
+    "examples/Mt_Na_LC050_N20/states/rh_0p70/equilibrium_status.json",
+    "examples/Mt_Na_LC050_N20/states/rh_0p70/manager_decision.json",
+    "examples/Mt_Na_LC050_N20/states/rh_0p70/initial_status.json",
+    "examples/Mt_Na_LC050_N20/states/rh_0p70/cycle_status.json",
+    "examples/Mt_Na_LC050_N20/states/rh_0p70/run_status.json"
+  ],
+  "archived_restart": "examples/Mt_Na_LC050_N20/states/rh_0p70/restart.gcmc_rh0p70.6100000",
+  "basal_proxy": 19.222,
+  "checks": {
+    "basal_slope_ok": true,
+    "external_water_cv_ok": true,
+    "external_water_slope_ok": true,
+    "inter_water_cv_ok": true,
+    "inter_water_slope_ok": true,
+    "previous_external_water_slope_ok": true,
+    "previous_inter_water_slope_ok": true,
+    "previous_total_water_slope_ok": true,
+    "previous_window_water_slopes_ok": true,
+    "temperature_sanity_ok": true,
+    "total_water_cv_ok": true,
+    "total_water_slope_ok": true,
+    "water_sum_consistent": true
+  },
+  "criteria": {
+    "basal_slope_abs_per_100k": 0.05,
+    "ext_cv_max": 0.08,
+    "ext_slope_frac_per_100k": 0.02,
+    "inter_cv_max": 0.05,
+    "inter_slope_frac_per_100k": 0.02,
+    "last_fraction": 0.3,
+    "min_points": 50,
+    "min_water_slope_abs": 1.0,
+    "require_previous_window_slopes": true,
+    "sum_tol": 0.5,
+    "total_cv_max": 0.03,
+    "total_slope_frac_per_100k": 0.01,
+    "window_steps": 1000000.0
+  },
+  "equilibrium_recommendation": "archive",
+  "equilibrium_status": "equilibrated",
+  "external_water": 208,
+  "fatal_errors": [],
+  "final_step": 6100000,
+  "final_window_slopes": {
+    "basal_proxy": {
+      "slope_limit_A_per_100k": 0.05,
+      "slope_per_100k": -0.02772686164134604
+    },
+    "dacc": {
+      "slope_per_100k": -2.0755789240698928e-06
+    },
+    "iacc": {
+      "slope_per_100k": -6.165086196438327e-06
+    },
+    "nwater_bottom": {
+      "slope_per_100k": 1.4529518385805797
+    },
+    "nwater_ext": {
+      "slope_limit_per_100k": 3.9205194805194807,
+      "slope_per_100k": 2.1965794684357007
+    },
+    "nwater_inter": {
+      "slope_limit_per_100k": 5.842697302697303,
+      "slope_per_100k": -0.6378758965585327
+    },
+    "nwater_top": {
+      "slope_per_100k": 0.7436276298551794
+    },
+    "nwater_total": {
+      "slope_limit_per_100k": 4.881608391608392,
+      "slope_per_100k": 1.55870357187727
+    },
+    "pe": {
+      "slope_per_100k": -18.047640981775423
+    },
+    "temp": {
+      "slope_per_100k": 0.005361450525499087
+    },
+    "zcenter": {
+      "slope_per_100k": 0.008070955152638361
+    }
+  },
+  "interlayer_water": 288,
+  "known_warnings": [
+    "kspace_neighbor_exclusion",
+    "net_charge",
+    "gcmc_full_energy"
+  ],
+  "manager_action": null,
+  "previous_window": {
+    "checks": {
+      "previous_external_water_slope_ok": true,
+      "previous_inter_water_slope_ok": true,
+      "previous_total_water_slope_ok": true
+    },
+    "n_points_window": 991,
+    "series": {
+      "nwater_ext": {
+        "cv": 0.04457690796185973,
+        "end": 189.0,
+        "mean": 176.5731584258325,
+        "slope_limit_per_100k": 3.53146316851665,
+        "slope_per_100k": 2.700161670084449,
+        "start": 164.0,
+        "std": 7.871085431683213
+      },
+      "nwater_inter": {
+        "cv": 0.0065718405955749876,
+        "end": 294.0,
+        "mean": 295.1190716448032,
+        "slope_limit_per_100k": 5.902381432896065,
+        "slope_per_100k": -0.6310324198332158,
+        "start": 298.0,
+        "std": 1.939475495563721
+      },
+      "nwater_total": {
+        "cv": 0.013021238630942613,
+        "end": 483.0,
+        "mean": 471.69223007063573,
+        "slope_limit_per_100k": 4.716922300706357,
+        "slope_per_100k": 2.069129250251089,
+        "start": 462.0,
+        "std": 6.142017088111233
+      }
+    },
+    "window_step_end": 5100000,
+    "window_step_start": 4110000
+  },
+  "reasons": [
+    "All equilibrium criteria passed in the final window."
+  ],
+  "rh": 0.7,
+  "run_dir": "examples/Mt_Na_LC050_N20/rh_0p70",
+  "selected_restart": "examples/Mt_Na_LC050_N20/states/rh_0p70/restart.gcmc_rh0p70.6100000",
+  "source_restart": "examples/Mt_Na_LC050_N20/rh_0p70/restart.gcmc_rh0p70.6100000",
+  "timestamp": "2026-06-20T11:32:07+08:00",
+  "total_water": 496,
+  "warnings_errors": {
+    "manager_warnings": [],
+    "run_error_keywords_found": [],
+    "run_return_code": 0,
+    "run_status": "completed"
+  }
+}

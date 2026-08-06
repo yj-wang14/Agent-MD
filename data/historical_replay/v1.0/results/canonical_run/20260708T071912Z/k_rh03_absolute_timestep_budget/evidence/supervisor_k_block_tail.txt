@@ -1,0 +1,55 @@
+[2026-07-02T11:24:11+08:00] START Mt_Na_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_008
+[2026-07-02T12:15:42+08:00] CHECK Mt_Na_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_008: alive=True log_size=90144 growth=NA fatal_hits=[]
+[2026-07-02T13:07:13+08:00] CHECK Mt_Na_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_008: alive=False log_size=146053 growth=55909 fatal_hits=[]
+Command: mpirun -np 16 lmp -in in.gcmc_rh0p30_segment_008
+  "stdout": "<REPO_ROOT>/examples/Mt_Na_LC040_N16/rh_0p30_from_strict_rh09/in.gcmc_rh0p30_segment_008.stdout",
+  "stderr": "<REPO_ROOT>/examples/Mt_Na_LC040_N16/rh_0p30_from_strict_rh09/in.gcmc_rh0p30_segment_008.stderr",
+[2026-07-03T00:24:25+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_initial
+[2026-07-03T01:48:25+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_initial: alive=True log_size=113443 growth=NA fatal_hits=[]
+[2026-07-03T03:12:25+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_initial: alive=False log_size=149864 growth=36421 fatal_hits=[]
+[2026-07-03T03:12:25+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+[2026-07-03T03:12:25+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=44100000 passed=False deltas=[-42.952089826340874, -17.154234986569975, -25.797854839770785, -0.5162393283363148]
+[2026-07-03T03:12:25+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_001
+[2026-07-03T04:16:23+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_001: alive=True log_size=90144 growth=NA fatal_hits=[]
+[2026-07-03T05:20:21+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_001: alive=False log_size=146055 growth=55911 fatal_hits=[]
+[2026-07-03T05:20:21+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+[2026-07-03T05:20:21+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=46100000 passed=False deltas=[-18.53621827274495, -6.902091920055989, -11.634126352689156, -0.3396953800690335]
+[2026-07-03T05:20:21+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_002
+[2026-07-03T06:20:25+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_002: alive=True log_size=98336 growth=NA fatal_hits=[]
+[2026-07-03T07:20:29+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_002: alive=False log_size=146055 growth=47719 fatal_hits=[]
+[2026-07-03T07:20:29+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+[2026-07-03T07:20:29+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=48100000 passed=False deltas=[-16.992839495833735, -8.762949625225158, -8.229889870608492, -0.15791980474615325]
+[2026-07-03T07:20:29+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_003
+[2026-07-03T08:12:34+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_003: alive=True log_size=94240 growth=NA fatal_hits=[]
+[2026-07-03T09:04:39+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_003: alive=False log_size=146055 growth=51815 fatal_hits=[]
+[2026-07-03T09:04:39+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+[2026-07-03T09:04:39+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=50100000 passed=False deltas=[-31.723545915163026, -12.935710995591378, -18.787834919571676, -0.22614086033726616]
+[2026-07-03T09:04:39+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_004
+[2026-07-03T09:52:26+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_004: alive=True log_size=94240 growth=NA fatal_hits=[]
+[2026-07-03T10:40:13+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_004: alive=False log_size=146053 growth=51813 fatal_hits=[]
+[2026-07-03T10:40:13+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+[2026-07-03T10:40:14+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=52100000 passed=False deltas=[-10.377454880448912, -22.169303750142188, 11.791848869693277, -0.4525546441582429]
+[2026-07-03T10:40:14+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_005
+[2026-07-03T11:24:08+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_005: alive=True log_size=94240 growth=NA fatal_hits=[]
+[2026-07-03T12:08:02+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_005: alive=False log_size=146053 growth=51813 fatal_hits=[]
+[2026-07-03T12:08:02+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+[2026-07-03T12:08:02+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=54100000 passed=False deltas=[-16.050344864716095, -6.062225199949784, -9.988119664766373, -0.38625307147941706]
+[2026-07-03T12:08:02+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_006
+[2026-07-03T12:49:01+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_006: alive=True log_size=90144 growth=NA fatal_hits=[]
+[2026-07-03T13:30:00+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_006: alive=False log_size=146050 growth=55906 fatal_hits=[]
+[2026-07-03T13:30:00+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+[2026-07-03T13:30:00+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=56100000 passed=False deltas=[1.9935992151561426, -3.3257520922191643, 5.319351307375282, -0.26157658509155335]
+[2026-07-03T13:30:00+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_007
+[2026-07-03T14:10:30+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_007: alive=True log_size=86048 growth=NA fatal_hits=[]
+[2026-07-03T14:51:00+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_007: alive=False log_size=146050 growth=60002 fatal_hits=[]
+[2026-07-03T14:51:00+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+[2026-07-03T14:51:00+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=58100000 passed=False deltas=[2.088510292103039, -5.206876955379932, 7.295387247483039, -0.09210192442288388]
+[2026-07-03T14:51:00+08:00] START Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_008
+[2026-07-03T15:31:32+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_008: alive=True log_size=86048 growth=NA fatal_hits=[]
+[2026-07-03T16:12:04+08:00] CHECK Mt_K_LC040_N16 rh0p30 in.gcmc_rh0p30_segment_008: alive=False log_size=146051 growth=60003 fatal_hits=[]
+[2026-07-03T16:12:04+08:00] Run directory: <REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09
+Command: mpirun -np 16 lmp -in in.gcmc_rh0p30_segment_008
+  "stdout": "<REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09/in.gcmc_rh0p30_segment_008.stdout",
+  "stderr": "<REPO_ROOT>/examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09/in.gcmc_rh0p30_segment_008.stderr",
+[2026-07-03T16:12:04+08:00] ANALYZE Mt_K_LC040_N16 rh0p30: step=60100000 passed=False deltas=[-7.2005000987034355, -9.690728433243182, 2.490228334539694, -0.058782796843869584]
+[2026-07-03T16:12:04+08:00] BLOCK Mt_K_LC040_N16 rh0p30: max_total_steps_per_rh

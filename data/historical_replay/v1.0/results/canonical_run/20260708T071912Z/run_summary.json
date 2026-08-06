@@ -1,0 +1,28 @@
+{
+  "cases": [
+    {
+      "call_index": "1",
+      "case_id": "k_rh03_absolute_timestep_budget",
+      "decision_json_present": "true",
+      "decision_json_valid": "true",
+      "output_dir": "${HISTORICAL_REPO_ROOT}/paper_artifacts/historical_event_replay/runs/20260708T071912Z/k_rh03_absolute_timestep_budget",
+      "return_code": "0",
+      "runtime_seconds": "117"
+    },
+    {
+      "call_index": "2",
+      "case_id": "stale_rh07_smoke_artifact",
+      "decision_json_present": "true",
+      "decision_json_valid": "true",
+      "output_dir": "${HISTORICAL_REPO_ROOT}/paper_artifacts/historical_event_replay/runs/20260708T071912Z/stale_rh07_smoke_artifact",
+      "return_code": "0",
+      "runtime_seconds": "160"
+    }
+  ],
+  "codex_calls_performed": 2,
+  "max_codex_calls": 2,
+  "primary_case_count": 2,
+  "run_dir": "${HISTORICAL_REPO_ROOT}/paper_artifacts/historical_event_replay/runs/20260708T071912Z",
+  "run_id": "20260708T071912Z",
+  "scoring_command": "python3 ${HISTORICAL_REPO_ROOT}/paper_artifacts/historical_event_replay/score_local_replays.py --run-dir ${HISTORICAL_REPO_ROOT}/paper_artifacts/historical_event_replay/runs/20260708T071912Z"
+}
