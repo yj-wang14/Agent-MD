@@ -1,5 +1,0 @@
-case_id,child_codex_invoked,child_return_code,runtime_seconds,structured_output_valid,event_classification,root_cause_diagnosis,evidence_grounding,recommended_action_safety,human_review_calibration,overall_case_outcome,rationale
-k_rh03_absolute_timestep_budget,False,N/A,N/A,N/A,not_run,not_run,not_run,not_run,not_run,NOT_RUN_AFTER_CLEANUP,Retained clean quantitative case; no child Codex call performed during integrity cleanup.
-stale_rh07_smoke_artifact,False,N/A,N/A,N/A,not_run,not_run,not_run,not_run,not_run,NOT_RUN_AFTER_CLEANUP,Retained clean quantitative case; no child Codex call performed during integrity cleanup.
-zero_gcmc_move_attempts,False,N/A,N/A,N/A,not_run,not_run,not_run,not_run,not_run,EXCLUDED_INVALID_GROUND_TRUTH,Removed from quantitative scoring because the original human-labeled ground truth was wrong; child result must not be reinterpreted as an error.
-pppm_keyword_runtime_stop,False,N/A,N/A,N/A,not_run,not_run,not_run,not_run,not_run,EXCLUDED_AMBIGUOUS_CONTAMINATED_CASE,Removed from quantitative scoring because authentic PPPM evidence is contaminated/ambiguous and lacks a clean linked fatal log/status/command.

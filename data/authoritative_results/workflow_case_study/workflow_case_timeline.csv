@@ -1,7 +1,0 @@
-order,event,deterministic_python,codex_assisted_reasoning,human_scientific_decision,evidence
-1,K RH0.3 strict downstream run reached absolute step 60.1M,driver stopped on max_total_steps_per_rh,later audit questioned step budget,do not accept/reject until accounting resolved,generated/downstream_rh03_rh01_production_supervisor.log
-2,Audit found inherited RH0.9 step 42.1M,status/restart provenance recorded parent step,identified absolute-vs-RH-local comparison bug,fix accounting before scientific decision,mtagent/run_campaign.py; mtagent/run_cycle.py; mtagent/campaign_manager.py
-3,"Actual K RH0.3 elapsed was 18M, not 60.1M",recomputed elapsed = final - RH start,reported corrected budget,resume K RH0.3 only,generated/downstream_rh03_rh01_production_status.json
-4,K RH0.3 resumed from restart 60.1M,continued only target system/RH,none during routine run,no unrelated reruns,examples/Mt_K_LC040_N16/rh_0p30_from_strict_rh09/restart.gcmc_rh0p30.60100000
-5,K RH0.3 passed at 66.1M after +6M steps,strict analyzer archived pass,none,start RH0.1 only after pass,examples/Mt_K_LC040_N16/states/rh_0p30_from_strict_rh09/summary.json
-6,K RH0.1 passed at 68.1M,strict analyzer archived pass,none,campaign complete,examples/Mt_K_LC040_N16/states/rh_0p10_from_strict_rh03/summary.json

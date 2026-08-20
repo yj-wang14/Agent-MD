@@ -1,5 +1,0 @@
-case_id,deterministic_rule_baseline,deterministic_rule_rationale,keyword_baseline,keyword_rationale,quantitative_scoring
-k_rh03_absolute_timestep_budget,FAIL,Existing pre-fix deterministic guard made the wrong absolute-timestep stop; cross-evidence reasoning needed to compare parent start step and RH-local elapsed.,FAIL,No error keyword indicates step-accounting bug.,true
-stale_rh07_smoke_artifact,PARTIAL,Can detect strict reanalysis failure/provenance conflict if comparing archive parent to updated RH0.9; older workflow may still treat archive as complete.,PARTIAL,Keywords find rh0p70/equilibrated/archive but not stale provenance.,true
-zero_gcmc_move_attempts,N/A,Excluded because original ground truth was invalid; not a benchmark error case.,N/A,Excluded because zero move fields were intentional under the production protocol.,false
-pppm_keyword_runtime_stop,N/A,Excluded because the evidence bundle is contaminated/ambiguous.,N/A,PPPM keyword hit is not a clean runtime-failure label.,false

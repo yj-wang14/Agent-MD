@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-echo "Simulation or scheduler command is blocked in blinded replay workspace: ${0}" >&2
-exit 126

@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# LAMMPS large outputs
+*.lammpstrj
+dump.*
+restart.*
+restart*
+log.lammps
+screen.log
+monitor_*.dat
+*.stdout
+*.stderr
+
+# Large simulation data
+*.data
+*.gro
+*.top
+*.xtc
+*.trr
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+# Dry-run preview status files 
+examples/**/equilibrium_status.preview.json
+examples/**/manager_decision.preview.json
+examples/**/input_generation_status.preview.json
+examples/**/cycle_status.preview.json
+examples/campaigns/*.plan.json
+examples/campaigns/*.plan.md
+examples/campaigns/*.state.json
+*.state.json
+
+# MD-GCMC runtime/generated case artifacts
+examples/Mt_Oct050_Na/equilibration/
+examples/Mt_Oct050_Na/generated/
+examples/Mt_Oct050_Na/raw/
+examples/Mt_Oct050_Na/rh_*/
+examples/Mt_Oct050_Na/inputs/*.data
+examples/Mt_Oct050_Na/inputs/*.final
+examples/Mt_Oct050_Na/inputs/restart*
+examples/Mt_Oct050_Na/**/*.stdout
+examples/Mt_Oct050_Na/**/*.stderr
+examples/Mt_Oct050_Na/**/log.lammps
+examples/Mt_Oct050_Na/**/restart*
+examples/Mt_Oct050_Na/**/*.lammpstrj
+
+# Archived states: keep summaries, ignore bulky state payloads.
+examples/Mt_Oct050_Na/states/*
+!examples/Mt_Oct050_Na/states/*/
+examples/Mt_Oct050_Na/states/*/*
+!examples/Mt_Oct050_Na/states/*/summary.json
+!examples/Mt_Oct050_Na/states/*/summary.md
+
+# ClayCode generated outputs; keep source YAML/CSV inputs separately.
+assets/claycode/MyMont-1/
+assets/claycode/.logfile_*.log
+examples/Mt_Oct050_Na/inputs/*_groups_regions.inc
+
+# Local ClayCode logs
+.logfile_*.log
+
+# Generic example runtime/generated artifacts
+generated/
+examples/*/equilibration/
+examples/*/equilibration_smoke/
+examples/*/rh_*/
+examples/*/raw/
+examples/*/generated/
+examples/*/inputs/
+examples/*/claycode_inputs/*/
+!examples/*/claycode_inputs/*.yaml
+!examples/*/claycode_inputs/*.csv
+!examples/*/claycode_inputs/*.json
+examples/*/claycode_inputs/*.claycode_status.json
+
+examples/*/states/
+
+# Local diagnostic runs
+examples/*/diagnostics_*/

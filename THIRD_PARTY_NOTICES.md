@@ -1,3 +1,9 @@
-# Third-party notices (draft)
+# Third-party notices
 
-This candidate includes no final license grant. LAMMPS and ClayCode are external scientific software and are not bundled. Redistribution rights and required notices for ClayCode-derived preparation inputs, ClayFF parameters, the SPC/E water model files, and derived molecular structures remain subject to human review. Bibliographic references in the manuscript do not substitute for software or data licenses.
+LAMMPS and ClayCode are external scientific software and are not bundled with this repository. ClayFF parameters, ClayCode preparation assets, production structures, and other third-party scientific data are not included.
+
+The included SPC/E topology files are illustrative LAMMPS molecule templates. Users should cite the original SPC/E water model publication, verify the atom, bond, angle, charge, and type mappings for their systems, and comply with any requirements applicable to their scientific use.
+
+Original SPC/E water model reference:
+
+H. J. C. Berendsen, J. R. Grigera, and T. P. Straatsma, “The missing term in effective pair potentials,” *The Journal of Physical Chemistry* **91**(24), 6269–6271 (1987). https://doi.org/10.1021/j100308a038

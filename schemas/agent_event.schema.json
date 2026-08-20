@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent-MD reasoning event",
+  "type": "object",
+  "required": ["campaign_id", "event_id", "event_type", "reason_for_escalation", "current_workflow_state"],
+  "properties": {
+    "campaign_id": {"type": "string", "minLength": 1},
+    "event_id": {"type": "string", "minLength": 1},
+    "event_type": {"enum": ["BATCH_COMPLETE", "NEEDS_REASONING", "UNKNOWN_FAILURE", "PROVENANCE_CONFLICT", "CONVERGENCE_ANOMALY"]},
+    "reason_for_escalation": {"type": "string", "minLength": 1},
+    "current_workflow_state": {"type": "object"},
+    "error_fingerprint": {"type": ["string", "null"]},
+    "relevant_paths": {"type": "array", "items": {"type": "string"}},
+    "system_id": {"type": ["string", "null"]},
+    "rh_tag": {"type": ["string", "null"]},
+    "timestamp": {"type": "string"}
+  },
+  "additionalProperties": true
+}
